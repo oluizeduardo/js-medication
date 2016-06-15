@@ -2,6 +2,17 @@
     font-family: "Open Sans";    
 }
 
-body{
-    background-color: cornflowerblue
+
+body {
+    background-color: lavender;
+}
+
+#center{
+    width: 500px;
+    margin: auto;
+}
+
+.center-medical{
+    width: 300px;
+    margin: auto;
 }
