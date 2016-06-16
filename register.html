@@ -7,11 +7,15 @@
     <!-- Link Google Fonts -->
     <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:600' type="text/css">
 
+    <!-- JQuery -->
+    <script   src="https://code.jquery.com/jquery-2.2.4.min.js"crossorigin="anonymous"></script>
+
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     
+    <!-- Style -->
     <link rel="stylesheet" href="css/styles.css">    
 </head>
 <body>
@@ -31,22 +35,22 @@
     <div class="container" id="center">
         <form id="formDataMedication" class="form-horizontal">
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="Cod. Matrícula do Idoso">
+                <input type="text" id="txtID" class="form-control" placeholder="Cod. Matrícula do Idoso">
             </div>
             
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="Nome do Idoso">
+                <input type="text" id="txtName" class="form-control" placeholder="Nome do Idoso">
             </div>
             
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="Nome do Remédio">
+                <input type="text" id="txtMedName" class="form-control" placeholder="Nome do Remédio">
             </div>
             
             <div class="form-group">
-                <input type="number" class="form-control" placeholder="Quantidade">
+                <input type="number" id="txtQtd" class="form-control" placeholder="Quantidade">
             </div>
             
-            <div class="form-group">
+            <div class="form-group" id="select">
                 <select class="form-control">
                     <option>Aplicação</option>
                     <option>Cápsula</option>
@@ -56,15 +60,17 @@
             </div>
             
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="Intervalo de Horário">
+                <input type="text" id="timebtwn" class="form-control" placeholder="Intervalo de Horário">
             </div>
             
             <div class="form-group">
-                <button type="button" class="btn btn-success">Cadastrar</button>
-            </div>                       
+                <div class="col-lg-offset-2 col-sm-4">
+                    <input type="submit" value="Cadastrar" id="btnAdd" class="btn btn-success"/>
+                </div>
+            </div>                      
         </form>
     </div>
     
-    
+    <script type="text/javascript" src="js/Functions.js"></script>
 </body>
 </html>
