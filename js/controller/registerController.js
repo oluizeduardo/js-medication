@@ -1,5 +1,14 @@
 (function () {
 
+
+    function resetForm(){
+        document.getElementById('txtID').value='';
+        document.getElementById('txtName').value='';
+        document.getElementById('txtMedName').value='';
+        document.getElementById('txtQtd').value=''; 
+        document.getElementById('timebtwn').value='';         
+    }
+
     function addMedication(event) {
         event.preventDefault();
         var medication = {
@@ -11,7 +20,10 @@
             Time: $("#timebtwn").val()
         };
         medicationService.addMedication(medication);
-        alert("Novo medicamento registrado!");
+        resetForm();
+        $("#alert-registration").removeClass("hide");
+        $('#alert-registration').fadeIn( 300 ).delay( 2000 ).fadeOut( 400 );
+        
     }
 
     function addListener() {

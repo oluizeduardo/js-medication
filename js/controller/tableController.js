@@ -9,6 +9,7 @@
         "<th>Quantidade</th>" +
         "<th>Dosagem</th>" +
         "<th>Intervalo de Tempo</th>" +
+        "<th>Ações</th>" +
         "</tr>" +
         "</thead>" +
         "<tbody>" +
