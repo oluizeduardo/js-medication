@@ -23,10 +23,17 @@ var medicationService = (function () {
         window.localStorage[_localStorageKey] = JSON.stringify(_medications);
     }
 
+    // Update a medication.
+    function updateMedication(medication, index) {
+        _medications[index] = medication;
+        window.localStorage[_localStorageKey] = JSON.stringify(_medications);
+    }
+
     // Public methods.
     return {
         getMedications: getMedications,
-        addMedication: addMedication
+        addMedication: addMedication,
+        updateMedication: updateMedication
     };
     
 })();

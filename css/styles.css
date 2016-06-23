@@ -1,7 +1,9 @@
 *{
     font-family: "Open Sans";    
 }
-
+h1 {
+    font-weight: bold;
+}
 
 body {
     background-color: lavender;
@@ -14,5 +16,14 @@ body {
 
 .center-medical{
     width: 300px;
+    height: 400px;
     margin: auto;
+    border: 2px solid black;
+}
+
+#imgpos {
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    margin-top: 80px
 }

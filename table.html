@@ -38,6 +38,63 @@
         <table id="tblList" class="table table-bordered">            
         </table>
     </div>
+    
+
+    <!-- Modal --> 
+    <div class="modal fade bd-example-modal-lg" data-target="myModal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="false">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="gridModalLabel">Editar Registro</h4>
+                </div>
+                
+                <div class="container" id="modal-form-center">
+                    <form id="formDataMedication" class="form-horizontal">
+                        <div class="form-group">
+                            <input type="text" id="txtID" class="form-control" required="required" placeholder="Cod. Matrícula do Idoso">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" id="txtName" class="form-control" required="required" placeholder="Nome do Idoso">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" id="txtMedName" class="form-control" required="required" placeholder="Nome do Remédio">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="number" id="txtQtd" class="form-control" required="required" placeholder="Quantidade">
+                        </div>
+
+                        <div class="form-group" id="select">
+                            <select class="form-control">
+                                <option>Aplicação</option>
+                                <option>Cápsula</option>
+                                <option>Comprimido</option>
+                                <option>Gotas</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <input type="number" id="timebtwn" name="interval" class="form-control" required="required" placeholder="Intervalo de Horário">
+                        </div>
+
+                        <div class="form-group">
+                            <div class="btn btn-success">
+                                <input type="submit" value="Salvar Mudanças" id="btnAdd" class="btn btn-success" />
+                            </div>
+                            <div class="btn btn-danger">
+                                <input type="submit" value="Cancelar" id="btnCancel" class="btn btn-danger" />
+                            </div>
+                        </div>                        
+                    </form>
+                </div>              
+            </div>
+        </div>
+    </div>
+    
 
     <script src="js/service/medicationService.js"></script>
     <script src="js/controller/tableController.js"></script>

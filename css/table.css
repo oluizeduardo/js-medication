@@ -19,3 +19,8 @@ thead tr:hover {
   background-color: transparent;
   color: inherit;
 }
+
+#modal-form-center{
+  margin: auto;
+  width: 600px;
+}
